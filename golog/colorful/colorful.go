@@ -1,6 +1,3 @@
-// The color engine for the go-log library
-// Copyright (c) 2017 Fadhli Dzil Ikram
-
 package colorful
 
 import (

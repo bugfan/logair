@@ -1,6 +1,3 @@
-// The colorful and simple logging library
-// Copyright (c) 2017 Fadhli Dzil Ikram
-
 package golog
 
 import (
@@ -15,12 +12,12 @@ import (
 
 	terminal "golang.org/x/term"
 
-	"github.com/bugfan/trojan-go/log"
-	"github.com/bugfan/trojan-go/log/golog/colorful"
+	"github.com/bugfan/logair"
+	"github.com/bugfan/logair/golog/colorful"
 )
 
 func init() {
-	log.RegisterLogger(New(os.Stdout))
+	logair.RegisterLogger(New(os.Stdout))
 }
 
 // FdWriter interface extends existing io.Writer with file descriptor function
@@ -108,7 +105,7 @@ func New(out FdWriter) *Logger {
 	}
 }
 
-func (l *Logger) SetLogLevel(level log.LogLevel) {
+func (l *Logger) SetLogLevel(level logair.LogLevel) {
 	l.mu.Lock()
 	defer l.mu.Unlock()
 	atomic.StoreInt32(&l.logLevel, int32(level))

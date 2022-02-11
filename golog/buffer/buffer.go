@@ -1,6 +1,3 @@
-// Buffer-like byte slice
-// Copyright (c) 2017 Fadhli Dzil Ikram
-
 package buffer
 
 // Buffer type wrap up byte slice built-in type
