@@ -6,7 +6,7 @@ package colorful
 import (
 	"runtime"
 
-	"github.com/bugfan/logair/log/golog/buffer"
+	"github.com/bugfan/logair/golog/buffer"
 )
 
 // ColorBuffer add color option to buffer append
